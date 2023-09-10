@@ -46,8 +46,8 @@ const App = () => {
 	}, [cartItem]);
 
 	useEffect(() => {
-		telegram.onEvent('mainButtonClicked', onSendData);
-		return () => telegram.offEvent('mainButtonClicked', onSendData);
+		telegram.onEvent('mainButtonClicked', onSendDate);
+		return () => telegram.offEvent('mainButtonClicked', onSendDate);
 	}, [onSendDate]);
 
 	return (
